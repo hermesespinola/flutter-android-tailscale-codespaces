@@ -1,7 +1,7 @@
 FROM dart
 
 RUN apt-get update
-RUN apt-get install -y curl git gh unzip xz-utils zip libglu1-mesa android-sdk android-tools android-sdk-platform-tools sdkmanager
+RUN apt-get install -y curl git gh unzip xz-utils zip libglu1-mesa android-sdk android-sdk-platform-tools sdkmanager
 
 RUN apt-get clean
 
