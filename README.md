@@ -73,9 +73,10 @@ If you'd prefer to use the desktop app version of VS Code, you can follow these 
 
 ### Developing for mobile
 
-Running Flutter in Codespaces makes it a bit difficult to run the app in a mobile simulator. However, developing for the web is basically the same as developing for mobile. I'd recommend opening your browser's developer tools and selecting a mobile device to emulate.
-
-If you're using Chrome or another Chromium-based browser, you can open DevTools like [this](https://developer.chrome.com/docs/devtools/open/) and emulate a device like [this](https://developer.chrome.com/docs/devtools/device-mode/). It'll be pretty similar for other browsers like Safari and Firefox.
+1. You need a [Tailscale network](https://tailscale.com) and have your Android device connected to it.
+2. On the first run of the codespace you need to run `sudo tailscale up --accept-routes` to login and connect your codespace to your network.
+3. Now that both your device and codespace are connected to the same network you can use adb's wireless debugging feature.
+Use `> ADB-QR:Connect With QR Code` to attach your device to the condespace's adb.
 
 ## Codespaces Usage
 
