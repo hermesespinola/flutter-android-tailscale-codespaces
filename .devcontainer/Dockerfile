@@ -8,7 +8,7 @@ RUN apt-get clean
 
 # Install flutter
 RUN git clone https://github.com/flutter/flutter.git -b stable --depth 1 /usr/local/flutter
-ENV PATH="/usr/local/flutter/bin:$PATH"
+ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:$PATH"
 
 # Enable flutter android
 ENV ANDROID_SDK_ROOT=/usr/lib/android-sdk/
