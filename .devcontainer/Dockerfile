@@ -14,4 +14,4 @@ RUN git clone https://github.com/flutter/flutter.git -b stable --depth 1 /flutte
 ENV PATH="$ANDROID_SDK_ROOT/platform-tools:/flutter/bin:$PATH"
 
 RUN flutter config --android-sdk "$ANDROID_SDK_ROOT" && flutter config --enable-android
-RUN yes | sdkmanager --licenses && yes | flutter doctor --android-licenses && flutter doctor
+RUN sh -c 'yes | flutter doctor --android-licenses'
