@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM dart
 
 RUN apt-get update
 RUN apt-get install -y curl git unzip xz-utils libgconf-2-4 gdb libstdc++6 lib32stdc++6 zip libglu1-mesa android-sdk android-sdk-platform-tools sdkmanager
