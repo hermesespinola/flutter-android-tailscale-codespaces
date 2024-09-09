@@ -20,5 +20,5 @@
       ]
     }
   },
-  "containerUser": "vscode"
+  "remoteUser": "${localEnv:USER}"
 }
