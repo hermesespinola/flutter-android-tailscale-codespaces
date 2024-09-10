@@ -1,4 +1,4 @@
-ARG VARIANT=debian:bookworm-slim
+ARG VARIANT=bookworm
 FROM mcr.microsoft.com/devcontainers/base:${VARIANT}
 
 RUN apt-get update
